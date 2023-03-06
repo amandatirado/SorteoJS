@@ -1,0 +1,41 @@
+@import '_mixins';
+.header{
+    width: 100%;
+    background-color: #212121;
+    &__wrapper{
+        width: 80%;
+        margin: auto;
+    }
+    &__h1{
+        margin: 1rem;
+        padding: 2rem;
+        text-align: center;
+        font-size: 4rem;
+        color: white;
+        // text-transform: uppercase;
+        font-weight: 800;
+        @include flexible (row, nowrap, center, center);
+    }
+    &__letter.a{
+        color: lightgreen;
+    }
+    &__letter.e{
+        color: lightgoldenrodyellow;
+    }
+    &__letter.i{
+        color: lavender;
+    }
+    &__letter.o{
+        color: lightsalmon;
+    }
+    &__letter.u{
+        color: lightslategrey;
+    }
+    &__letter.x{
+        color: lightgray;
+    }
+    &__letter.z{
+        color: lightpink;
+    }
+
+}

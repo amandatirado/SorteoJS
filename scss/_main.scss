@@ -1,0 +1,54 @@
+@import '_mixins';
+.main{
+    width: 100%;
+    background-color: lightslategrey;
+    height: 90vh;
+    @include flexible (column, nowrap, flex-start, center);
+    &__wrapper{
+        margin-top: 10rem;
+        width: 80%;
+        padding: 1rem;
+        // background-color: gray;
+        @include flexible (column, nowrap, center, center);
+    }
+    &__raffle{
+        width: 30%;
+        @include flexible (row, nowrap, center, center);
+    }
+    &__input{
+        background-color: whitesmoke;
+        border: 2px solid #363636;
+        border-radius: .4rem;
+        padding: .4rem .8rem;
+        margin-right: 2rem;
+    }
+    &__symbol{
+        width: 2rem;
+        color: whitesmoke;
+        background-color: #363636;
+        border-radius: 2rem;
+    }
+    &__symbol:hover{
+        transform: scale(1.25);
+    }
+    &__symbol.right{
+        margin-left: 2rem;
+    }
+    &__solution{
+        width: 30%;
+        margin-top: 2rem;
+    }
+    &__name{
+        margin: 1rem 0;
+        border: 1.6px solid #363636;
+        border-radius: .4rem;
+        text-align: center;
+        padding: .5rem;
+        background-color: whitesmoke;
+    }
+    &__name.active{
+        border: 1.6px solid whitesmoke;
+        background-color: #363636;
+        color: whitesmoke;
+    }
+}
